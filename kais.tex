@@ -1,0 +1,181 @@
+% sample article for KAIS
+% last modified by alison woollatt, 18 jan 00
+% minor changes by xindong wu, 2 march 01
+
+\documentclass{kais}
+%
+\usepackage{wrapfig,graphicx,epsf}
+\usepackage[dcucite]{harvard}
+
+\newtheorem{defi}{Definition}[section]
+\newtheorem{property}{Property}[section]
+\newtheorem{algorithm}{Algorithm}[section]
+
+\newcommand\changenum{%
+  \renewcommand\labelenumi{\theenumi}%
+  \renewcommand{\theenumi}{(\arabic{enumi})}%
+}
+
+\newcommand\changepnum{%
+  \renewcommand\labelenumi{\theenumi}%
+  \renewcommand{\theenumi}{($P_\arabic{enumi}$)}%
+}
+
+%\bibliographystyle{agsm}
+
+\received{xxx}
+\revised{xxx}
+\accepted{xxx}
+
+\pubyear{2000}
+\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\volume{xxx}
+
+\begin{document}
+\label{firstpage}
+
+\title{Variability-based improvement of m-learning applications development}
+
+\author[FalvoJr et al]{V.~FalvoJr$^1$, A.~Marcolino$^1$, N.~Duarte~Filho$^1$,E.~OliveiraJr$^2$ and
+E.~Barbosa$^1$\\ $^1$University of S\~ao Paulo (USP), S\~ao Paulo, Brazil;\\$^2$State University of Maring\'a (UEM), Paran\'a, Brazil}
+ 
+\maketitle
+
+\begin{abstract}
+Software Product Lines (SPL) aim at improving the product quality and time-to-market of the development methodology of singular software. The central concept of such a reuse approach is variability, which provides diversity of software products in a specific domain. In the educational domain, the popularity of mobile devices has contributed to the increasing demand for mobile learning (m-learning) applications. This paper discusses how variability can improve the development of m-learning applications by adoption of the SMarty, a concise variability management approach. An SPL for m-learning applications has been proposed and experimentally evaluated in industry and provided evidences that well-defined variabilities can speed up time-to-market of m-learning products with a reduced number of faults.
+\end{abstract}
+
+\begin{keywords}
+mobile learning applications; software product lines; variability management; experimental evaluation
+\end{keywords}
+
+\input{sections/section1}
+
+\input{sections/section2}
+
+\input{sections/section3}
+
+\input{sections/section4}
+
+\input{sections/section5}
+
+\input{sections/section6}
+
+\input{sections/section7}
+
+\input{sections/section8}
+
+\begin{thebibliography}{99}
+
+\harvarditem{Chen}{2011}{chen11} Chen~L, Babar~MA. 2011. A systematic review of evaluation of variability management approaches in software product lines. Information and Software Technology.
+
+\harvarditem{Capilla et al}{2013}{capilla13} Capilla~R, Bosch~J, Kang~KC. 2013. Systems and Software Variability Management. Springer.
+
+\harvarditem{B\"{o}ckle and van der Linden}{2005}{bockle05} B\"{o}ckle~G, van der Linden~FJ. 2005. Software product line engineering: foundations, principles and techniques. Edited by Klaus Pohl. Springer Science \& Business Media.
+
+\harvarditem{van der Linden et al}{2007}{vanderlinden07} van der Linden~FJ, Schmid~K, Rommes~E. 2007. Software product lines in action: the best industrial practice in product line engineering. Springer Science \& Business Media.
+
+\harvarditem{West and Vosloo}{2012}{west12} West~M, Vosloo~S. 2012. Mobile Learning for Teachers: Global Themes. UNESCO.
+
+\harvarditem{Kukulska-Hulme and Traxler}{2005}{kukulska05} Kukulska-Hulme~A, Traxler~J. 2005. Mobile Learning: a Handbook for Educators and Trainers. Routledge.
+
+\harvarditem{Bezerra et al}{2009}{bezerra09} Bezerra~YM, Pereira~TAB, da Silveira~GE. 2009. A Systematic Review of Software Product Lines Applied to Mobile Middleware. Information Technology: New Generations (ITNG).
+
+\harvarditem{Kinshuk et al}{2003}{kinshuk03} Kinshuk~SJ, Sutinen~E, Goh~T. 2003. Mobile technologies in support of distance learning. Asian Journal of Distance Education.
+
+\harvarditem{Wexler et al}{2008}{wexler08} Wexler~S, Brown~J, Metcalf~D, Rogers~D, Wagner~E. 2008. Mobile Learning: What it is, why it matters, and how to incorporate it into your learning strategy. Guild Research.
+
+\harvarditem{FalvoJr et al}{2014a}{falvojr14a} FalvoJr~V, Duarte Filho~NF, OliveiraJr~E, Barbosa~EF. 2014. Towards the Establishment of a Software Product Line for Mobile Learning Applications. International Conference on Software Engineering and Knowledge Engineering (SEKE).
+
+\harvarditem{FalvoJr et al}{2014b}{falvojr14b} FalvoJr~V, Duarte Filho~NF, OliveiraJr~E, Barbosa~EF. 2014. A Contribution to the Adoption of Software Product Lines in the Development of Mobile Learning Applications. Annual Frontiers In Education (FIE) Conference.
+
+\harvarditem{OliveiraJr et al}{2010}{oliveirajr10} OliveiraJr E, Gimenes IMS, Maldonado JC. 2010. Systematic Management of Variability in UML-based Software Product Lines. Journal Universal Computer Science.
+
+\harvarditem{Bosch}{2001}{bosch01} Bosch~J. 2001. Software product lines: organizational alternatives. International Conference on Software Engineering.
+
+\harvarditem{Marcolino et al}{2013}{marcolino13} Marcolino~A, OliveiraJr~E, Gimenes~IMS, Maldonado~JC. 2013. Towards the Effectiveness of a Variability Management Approach at Use Case Level. International Conference on Software Engineering and Knowledge Engineering (SEKE).
+
+\harvarditem{Marcolino et al}{2014a}{marcolino14a} Marcolino~A., OliveiraJr~E, Gimenes~IMS, Barbosa~EF. 2014. Empirically Based Evolution of a Variability Management Approach at UML Class Level. Computer Software and Applications Conference (COMPSAC).
+
+\harvarditem{Marcolino et al}{2014b}{marcolino14b} Marcolino~A., OliveiraJr~E, Gimenes~IMS. 2014. Towards the Effectiveness of the SMarty Approach for Variability Management at Sequence Diagram Level. International Conference on Enterprise Information Systems (ICEIS).
+
+\harvarditem{Bera et al}{2015}{bera15} Bera~MHG, OliveiraJr~E, Colanzi~TE. 2015. Evidence-based SMarty Support for Variability Identification and Representation in Component Models. International Conference on Enterprise Information Systems (ICEIS).
+
+\harvarditem{Duarte~Filho and Barbosa}{2013}{filho13} Duarte~Filho~NF, Barbosa~EF. 2013. A requirements catalog for mobile learning environments. Annual ACM Symposium on Applied Computing.
+
+\harvarditem{Krueger}{2002}{krueger02} Krueger~C. 2002. Easing the transition to software mass customization. Software Product-Family Engineering. Springer Berlin Heidelberg.
+
+\harvarditem{Kang et al}{1990}{kang90} Kang~KC, Cohen~SG, Hess~JA, Novak~WE, Peterson~AS. 1990. Feature-oriented domain analysis (FODA) feasibility study. Software Engineering Institute, Carnegie Mellon University.
+
+\harvarditem{Llamas et al}{2014}{llamas14} Llamas~MSR, Reith~R, Shirer~M. 2014. Android and iOS Continue to Dominate the Worldwide Smartphone Market with Android Shipments Just Shy of 800 Million in 2013. According to IDC (Online).
+
+\harvarditem{Van Gurp et al}{2001}{vangurp01} Van Gurp~J, Bosch~J, Svahnberg~M. 2001. On the notion of variability in software product lines. Working IEEE/IFIP Conference on Software Architecture.
+
+\harvarditem{Fielding}{2000}{fielding00} Fielding~RT. 2000. Architectural styles and the design of network-based software architectures. University of California.
+
+\harvarditem{Marinho et al}{2010}{marinho10} Marinho~FG, Costa~AL, Lima~FF, Neto~JBB, Rocha~L, Dantas~VLL, Andrade~RMC, Teixeira~E, Werner~C. 2010. An architecture proposal for nested software product lines in the domain of mobile and context-aware applications. Software Components, Architectures and Reuse (SBCARS).
+
+\harvarditem{Nascimento et al}{2011}{nascimento11} Nascimento~AS, Rubira~CMF and Lee~J. 2011. An SPL approach for adaptive fault tolerance in SOA. International Software Product Line Conference.
+
+\harvarditem{Jedlitschka and Pfahl}{2005}{jedlitschka07} Jedlitschka~A, Pfahl~D 2005. Reporting guidelines for controlled experiments in software engineering. In Empirical Software Engineering. IEEE Software.
+
+\harvarditem{Craig and Jaskiel}{2002}{craig02} Craig~RD, Jaskiel~SP. 2002. Systematic software testing. Artech House.
+
+\harvarditem{Wohlin et al}{2012}{wohlin12} Wohlin~C, Runeson~P, Host~M, Ohlsson~MC, Regnell~B, Wesslen~A. 2012. Experimentation in software engineering. Springer Science \& Business Media.
+
+\harvarditem{Shaphiro and Wilk}{1965}{shaphirowilk65} Shaphiro~SS, Wilk~MB. 1965. An analysis of variance test for normality. Biometrika.
+
+\harvarditem{Neto and Conte}{2013}{neto13} Neto~AA, Conte~T. 2013. A conceptual model to address threats to validity in controlled experiments. International Conference on Evaluation and Assessment in Software Engineering. ACM.
+
+\harvarditem{Engstr\"{o}m and Runeson}{2011}{engstrom11} Engstr\"{o}m~E, Runeson~P. 2011. Software product line testing -- A systematic mapping study. Information and Software Technology.
+
+\harvarditem{Gamez et al}{2014}{gamez14} Gamez~N, Fuentes~L, Troya~J. 2014. Self-adaptation of mobile systems with dynamic software product lines. IEEE Software.
+
+\harvarditem{ITU}{2014}{itu14} ITU. 2014. The world in 2014: Ict facts and figures. Information and Communication Technologies (ICT).
+
+\end{thebibliography}
+
+\section*{Author Biographies}
+\leavevmode
+
+\vbox{%
+\begin{wrapfigure}{l}{80pt}
+{\vspace*{15pt}\fbox{insert photo}\vspace*{100pt}}%
+\end{wrapfigure}
+\noindent\small 
+{\bf Venilton FalvoJr} TODO \vadjust{\vspace{40pt}}}
+
+\vspace{15pt}
+\vbox{%
+\begin{wrapfigure}{l}{80pt}
+{\vspace*{15pt}\fbox{insert photo}\vspace*{100pt}}%
+\end{wrapfigure}
+\noindent\small {\bf Anderson~Marcolino} TODO \vadjust{\vspace{40pt}}}
+
+\vspace{15pt}
+\vbox{%
+\begin{wrapfigure}{l}{80pt}
+{\vspace*{15pt}\fbox{insert photo}\vspace*{100pt}}%
+\end{wrapfigure}
+\noindent\small 
+{\bf Nemesio~Duarte~Filho} TODO \vadjust{\vspace{40pt}}}
+
+\vspace{15pt}
+\vbox{%
+\begin{wrapfigure}{l}{80pt}
+{\vspace*{15pt}\fbox{insert photo}\vspace*{100pt}}%
+\end{wrapfigure}
+\noindent\small 
+{\bf Edson~OliveiraJr} TODO \vadjust{\vspace{40pt}}}
+
+\vspace{15pt}
+\vbox{%
+\begin{wrapfigure}{l}{80pt}
+{\vspace*{15pt}\fbox{insert photo}\vspace*{100pt}}%
+\end{wrapfigure}
+\noindent\small 
+{\bf Ellen~Barbosa} TODO \vadjust{\vspace{40pt}}}
+
+\correspond{Ellen Barbosa, Institute of Science and Computational Mathematics (ICMC-USP), Avenida Trabalhador S\~ao-Carlense, 400, S\~ao Paulo, Brazil. E-mail: francine@icmc.usp.br. Phone: +55 (16) 3373-8177. Fax: +55 (16) 3373-8888.}
+\label{lastpage}
+\end{document}

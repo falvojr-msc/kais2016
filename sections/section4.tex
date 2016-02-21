@@ -1,0 +1,401 @@
+% 30/12/2015 06:22 %
+
+\section{M-SPLearning Experimental Evaluation}\label{section4}
+
+This section reports the experimental evaluation of M-SPLearning regarding time-to-market and quality improvement. M-SPlearning was compared with a software singular development methodology. The guidelines proposed by Jedlitschka et al. \cite{jedlitschka07} were followed for controlled experiments.
+
+\subsection{Motivation}\label{sub:motivation}
+
+
+The choice for the adoption of new technologies or approaches used in the development process depends on the deserved aspects of quality and benefits. Although many approaches have been developed, many issues about them must be solved for a suitable adoption in both industry and academic environments. Experimental evaluations may shed light on the identification of evidences from quality and benefits of an approach, justifying their choice. In some cases, the collected evidence may still support the correction of problems identified during the experimental evaluations and improvements in the proposals.
+
+Therefore, the experimental evaluation of the M-SPlearning is presented based on two relevant software development variables: time-to-market and number of faults.
+
+\subsubsection{Research Objectives}\label{sub:object}
+
+The experiment aimed at a \textbf{comparison} between the singular software development (SSD) and the software product line (SPL) methodologies, \textbf{for the purpose of} identification of the most efficient, \textbf{regarding} the time spent on the creation of software products (time) and number of their faults, \textbf{in the context of} practitioners from industry.
+
+
+\subsection{Experimental Design}\label{sub:design}
+
+This section describes the experimental design and procedures for support of future replications.
+
+\subsubsection{Goals}
+
+Two research questions (R.Q.) based on the research objective were raised:
+
+\textbf{R.Q.1} Which methodology is more efficient regarding time-to-market, SSD or SPL?
+
+\textbf{R.Q.2} Which methodology showed more quality in terms of number of faults in the software product created, SSD or SPL?
+
+\subsubsection{Hypotheses}
+
+Two sets of hypotheses were defined to be tested and each of them is related to its respective research questions (R.Q.1 and R.Q.2):
+
+\textbf{R.Q.1 hypotheses:} time-to-market
+
+	\begin{itemize}
+	
+	\item \textbf{Null Hypothesis ($H_{0}$)}: there is no significant difference of time-to-market between SSD and SPL.
+	
+	$H_{0}$ : $\mu$(\textit{t(SSD)}) =  $\mu$(\textit{t(SPL)});
+	
+	\item \textbf{Alternative Hypothesis ($H_{1}$)}: SSD has less time-to-market than SPL.
+	
+	$H_{1}$ : $\mu$(\textit{t(SSD)}) $<$ $\mu$(\textit{t(SPL)});
+		
+	
+	\item \textbf{Alternative Hypothesis ($H_{2}$)}: SSD has more time-to-market than SPL.
+	
+	$H_{2}$ :  $\mu$(\textit{t(SSD)}) $>$ $\mu$(\textit{t(SPL)}).		
+	
+	\end{itemize}	
+
+\textbf{R.Q.2 hypotheses:}
+quality in terms of number of faults
+	\begin{itemize}
+	
+	\item \textbf{Null Hypothesis ($H_{0}$)}: there is no significant difference between SSD and SPL with regard to quality regarding number of faults in the software products created.
+	
+	$H_{0}$ : $\mu$(\textit{d(SSD)}) =  $\mu$(\textit{d(SPL)});
+	
+	\item \textbf{Alternative Hypothesis ($H_{1}$)}: SSD has a larger number of faults than SPL.
+	
+	$H_{1}$ : $\mu$(\textit{d(SSD)}) $>$ $\mu$(\textit{d(SPL)});
+		
+	\item \textbf{Alternative Hypothesis ($H_{2}$)}: SSD has a smaller number of faults than SPL.
+	
+	$H_{2}$ :  $\mu$(\textit{d(SSD)}) $<$ $\mu$(\textit{d(SPL)}).		
+	
+	\end{itemize}
+
+\subsubsection{Variables}
+
+Dependent variables are the mean of time ($t$) and faults ($f$), defined as follows:
+
+\small
+
+\begin{equation}\label{eq:1}
+\mu{(t)}=(\Sigma xi)/n, i = 1..n
+\end{equation}
+\begin{equation}\label{eq:2}
+\mu{(f)}=(\Sigma yi)/n, i = 1..n
+\end{equation}
+\normalsize 
+where:
+\begin{itemize}
+\item \textit{t} is the implementation time (minutes);
+\item \textit{f} is the number of faults;
+\item \textit{xi} is the time of implementation of participant i;
+\item \textit{yi} is the number of faults detected in the implementation of participant i; and
+\item \textit{n} is the total of participants in the experiment.
+\end{itemize}
+\normalsize
+
+Independent variables are the development methodology, which is a factor with two treatments (SSD and SPL), and the software product configuration for mobile learning platform, which is a factor with two treatments namely product 1 (P1) and product 2 (P2). Table \ref{tab:variables} shows the description of dependent and independent variables.
+
+%\begin{landscape}
+
+\begin{table}
+\centering
+\caption{\label{tab:variables}Dependent and Independent Variables Description.}
+\includegraphics[scale=0.75]{figures/section4/tab_n.pdf}
+
+
+
+%\resizebox{1.2\textwidth}{!}{
+%\small
+%\begin{tabular}{cccccccccc}
+%\multicolumn{1}{l}{}                                                                         & \multicolumn{1}{l}{}                                                                                                                      & \multicolumn{1}{l}{}                                 & \multicolumn{1}{l}{}                                                                                                        & \multicolumn{1}{l}{}                                                                                           & \multicolumn{1}{l}{}                                                                                                        & \multicolumn{1}{l}{}                                                                                            & \multicolumn{1}{l}{}                                                                & \multicolumn{1}{l}{}                                                                                                                             & \multicolumn{1}{l}{}                                              \\ \hline
+%\multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Name of the\\ Variable\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Type of the\\ Variable\\ (independent, \\ dependent, \\ moderating)\end{tabular}}} & \multicolumn{1}{c|}{\textbf{Abbreviation}}           & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Class\\ (product, \\ process, \\ resource, \\ method)\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Entity\\ (instance of \\ the class)\end{tabular}}}      & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Type of \\ Attribute \\ (internal, \\ external, \ \ldots)\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Scale\\  Type \\ (nominal, \\ ordinal,\ \ldots)\end{tabular}}} & \multicolumn{1}{c|}{\textbf{Unit}}                                                  & \multicolumn{1}{c|}{\textbf{Range}}                                                                                                              & \textbf{\begin{tabular}[c]{@{}c@{}}Counting \\ Rule\end{tabular}} \\ \hline
+%\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Development\\ methodology\end{tabular}}       & \multicolumn{1}{c|}{\multirow{2}{*}{independent}}                                                                                         & \multicolumn{1}{c|}{DM}                              & \multicolumn{1}{c|}{method}                                                                                                 & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Software\\ development \\ methodology\end{tabular}}             & \multicolumn{1}{c|}{N.A.}                                                                                                   & \multicolumn{1}{c|}{nominal}                                                                                    & \multicolumn{1}{c|}{N.A.}                                                           & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}SSD – Singular \\ software \\ development \\ and SPL \\ Software \\ product\\  line.\end{tabular}} & N.A.                                                              \\ \cline{1-1} \cline{3-10} 
+%\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Software\\ Products\end{tabular}}             & \multicolumn{1}{c|}{}                                                                                                                     & \multicolumn{1}{c|}{P}                               & \multicolumn{1}{c|}{product}                                                                                                & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Mobile\\ Software \\ Product\end{tabular}}                      & \multicolumn{1}{c|}{N.A.}                                                                                                   & \multicolumn{1}{c|}{nominal}                                                                                    & \multicolumn{1}{c|}{N.A.}                                                           & \multicolumn{1}{c|}{P1 and P2.}                                                                                                                  & N.A.                                                              \\ \hline
+%\multicolumn{10}{c}{}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       \\ \hline
+%\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Time of \\ implementation\end{tabular}}       & \multicolumn{1}{c|}{\multirow{2}{*}{dependent}}                                                                                           & \multicolumn{1}{c|}{\begin{equation}t\end{equation}} & \multicolumn{1}{c|}{product}                                                                                                & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}time to\\ market\end{tabular}}                                  & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}internal: time;\\  external: time to \\ market\end{tabular}}                 & \multicolumn{1}{c|}{ordinal}                                                                                    & \multicolumn{1}{c|}{Minutes} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}From \\ 00:00:00 to \\03:00:00.\end{tabular}}                                                                                                                   & \begin{tabular}[c]{@{}c@{}}Eq. 1\end{tabular}           \\ \cline{1-1} \cline{3-10} 
+%\multicolumn{1}{c|}{Faults}                                                                  & \multicolumn{1}{c|}{}                                                                                                                     & \multicolumn{1}{c|}{\begin{equation}f\end{equation}} & \multicolumn{1}{c|}{product}                                                                                                & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}number of\\ faults in\\ each\\ software\\ product\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}internal: faults;\\ external: quality\end{tabular}}                          & \multicolumn{1}{c|}{ordinal}                                                                                    & \multicolumn{1}{c|}{Integer} & \multicolumn{1}{c|}{any integer}                                                                                                                 & \begin{tabular}[c]{@{}c@{}}Eq. 2\end{tabular}           \\ \hline
+%
+%\end{tabular}
+%}
+\end{table}
+%\end{landscape}
+
+Time-to-market is the average time spent for the implementation of a software product with a specific group of variabilities of M-SPLearning. With regard to the number of faults, the implemented products were tested using the concept of test cases \cite{craig02}. Thus, it was possible to quantify the mean of defects of products. Such metrics are relevant because they are directly related to time-to-market and quality of the m-learning applications.
+
+\subsubsection{Participants}
+
+In our study, the participants were employee volunteers from a Brazilian software development industry. All of them had, at least, one year experience with development background in Java, Microsoft .NET and/or PHP.
+
+The reduced number of practitioners led us to apply a non-random selection. The random capacity was applied at the assignment of the development methodology and software product by participant. 
+
+Block classification was defined by the two factors with two treatments, which were interspersed in four groups. The population was divided into four blocks by means of a draw. The balancing was applied in the tasks, which were assigned in equal numbers to a similar number of participants.
+
+The participants were randomly separated into the following groups:
+
+\begin{itemize}
+\item \textbf{First Group:} focused on SSD with P1 and SPL with P2;
+
+\item \textbf{Second Group:} focused on SPL with P1 and SSD with P2;
+
+\item \textbf{Third Group:} focused on SSD with P2 and SPL with P1; and
+
+\item \textbf{Fourth Group:} focused on SPL with P2 and SSD with P1;
+\end{itemize}
+
+\subsubsection{Objects}
+
+Among a total of 30 features and diferent configurations, two educational software products configurations for mobile learning platform (Android) were considered for the application of the SSD and SPL methodologies which are: one for image (P1) and another for video resource (P2).
+
+\subsubsection{Instrumentation}
+
+The experiment was supported by the following set of instruments: (i) similar desktop computers with all necessary tools (Eclipse IDE and plugins); (ii) the consent term for the experimental study; (iii) a characterization questionnaire; (iv) use case, component and sequence UML diagrams; (v) interface messages; (vi) database model; (vii) a project base; (viii) similarities of the products; and (ix) experimental forms for SSD and SPL, randomly distributed and feedback questionnaire.
+
+\subsubsection{Data Collection and Analysis Procedures}
+
+The main assessment tools were the products developed based on two software specifications (P1 and P2) for mobile learning platform (Android).
+
+The M-SPLearning was designed according to the catalog of requirements (Section \ref{section2}) and with 30 features, 16 mandatory and 14 optional from m-learning applications. A specific niche of features was used for the evaluation. The variabilities related to multimedia resources enabled the creation of up to 15 different products (a represented in Figure \ref{figureMSPLFeatureModel}). P1 and P2 were specified and implemented by SSD and SPL methodologies. Figure \ref{fig:prod} shows the nuances between the products generated for the video feature.
+
+
+\begin{figure*}
+\centering
+\includegraphics[scale=0.272]{figures/section4/prod.png}
+\centering
+\caption{Two Video Products (P1) Developed in the Experimental Execution with a) SPL and b) SDD.}
+\label{fig:prod}
+\end{figure*}
+
+
+To collect the data for the analysis of time-to-market, the initial and final time of implementation process for P1 and P2, was registered individually in the experimental form to be calculated in Equation \ref{eq:1}. On the other hand, for the analysis of quality, each of 15 developed products were tested and the number of faults was collect to compare the use of SPL and SDD methodologies by means of the Equation \ref{eq:2}.
+
+\subsubsection{Validity Evaluation}
+
+A pilot project was developed with two pratictioners from industry, who evaluated the study instrumentation and established the duration of the training and execution sessions. The results and its participants were not used in the final execution and data analysis of the experiment.
+
+\subsection{Execution}\label{sub:execution}
+
+This section presents how the experimental plan (design) was defined.
+
+\subsubsection{Sample}
+
+The sample was composed of a total of 21 pratictioners who participated in the training session. However, 18 participants contributed in the experimental execution, due the unavailability of 3 volunteers in the execution day.
+
+\subsubsection{Preparation}
+
+The participants underwent a 3 day training of the essential concepts of Android development for SSD and SPL with the Eclipse IDE. The knowledge was evaluated through essays at the end of each training session. On the fourth day, the experiment was performed.
+
+\subsubsection{Data Collection}
+
+The steps adopted for data collection were:
+
+\begin{enumerate}
+
+\item the participants present of three daily 4 hour trainning sessions in an industrial environment;
+
+\item the participants were divided into four groups by means of a draw;
+\item the experimenter gave the participants a set of documents: containing UML diagram models, a dataset model and an interface message specification for each product, such as the material used in training session. Each individual was provided with a desktop computer with all requirements to develop a software product and received an experimental form where they registered the spending time to development process to be analysed.
+\item the participant read each given document;
+\item the experimenter explained the documents;
+\item the participant read and clarified possible doubts about the products specifications; and
+\item finally, each participant received and used two randomly drawn methodologies for the development of a requested m-learning product. For each application, participants registered the lasting of the application (start time, end and brakes). At the end of the two development tasks for the two methodologies they were asked to answer a feedback questionnaire and their opinion about the experimental execution and technologies used give.
+\end{enumerate}
+
+\subsection{Analysis}\label{sub:analysis}
+
+As the experiment session was finished, collected data was prepared (tabulation and descriptive statistics) to be applied a statistical tests.
+
+\subsubsection{Collected Data and Descriptive Statistics}
+
+For each participant (``\texttt{Participant \#}'' column), we collected the following data: total time of implementation and total number of faults, identified by testing procedures, and the mean calculation. These results are shown in Table \ref{tab:resul1} and the results for each participant are plotted in box-plots of Figure \ref{fig:boxplot}. 
+
+\begin{table}
+\caption{\label{tab:resul1}SSD and SPL Collected Data and Descriptive Statistics.}
+    \centering
+    \scriptsize
+\begin{tabular}{c|c|c|c|c}
+\hline
+\multirow{2}{*}{\textbf{Participant \#}} & \multicolumn{2}{c|}{\textbf{SSD}} & \multicolumn{2}{c}{\textbf{SPL}}  \\ \cline{2-5}
+                                    & \textbf{Time $(t)$}   & \textbf{Faults $(f)$} & \textbf{Time $(t)$}  & \textbf{Faults $(f)$}                                  \\ \hline
+1                                   & 161             & 15              & 2              & 9                                              \\ \hline
+2                                   & 90              & 8               & 1              & 0                                             \\ \hline
+3                                   & 105             & 4               & 11             & 0                                              \\ \hline
+4                                   & 104             & 1               & 3              & 0                                             \\ \hline
+5                                   & 73              & 2               & 1              & 0                                             \\ \hline
+6                                   & 99              & 9               & 3              & 0                                              \\ \hline
+7                                   & 165             & 12              & 10             & 0                                              \\ \hline
+8                                   & 95              & 1               & 3              & 0                                              \\ \hline
+9                                   & 104             & 3               & 2              & 0                                               \\ \hline
+10                                  & 102             & 0               & 4              & 0                                              \\ \hline
+11                                  & 61              & 0               & 2              & 0                                             \\ \hline
+12                                  & 82              & 4               & 8              & 0                                              \\ \hline
+13                                  & 114             & 1               & 4              & 0                                             \\ \hline
+14                                  & 103             & 6               & 14             & 0                                            \\ \hline
+15                                  & 111             & 2               & 2              & 0                                              \\ \hline
+16                                  & 176             & 9               & 4              & 0                                              \\ \hline
+17                                  & 120             & 17              & 5              & 0                                             \\ \hline
+18                                  & 175             & 34              & 2              & 9                                              \\ \hline
+\textbf{Mean}                       & \textbf{113.33} & \textbf{7.11}   & \textbf{4.50}  & \textbf{1.00}                 \\ \cline{1-5}
+\textbf{Median}                     & \textbf{104}    & \textbf{4}      & \textbf{3}     & \textbf{0}                                      \\ \cline{1-5}
+\textbf{Std. Dev.}                  & \textbf{33.98}  & \textbf{8.46}   & \textbf{3.75}  & \textbf{2.91}                             \\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.8]{./figures/section4/boxplot.eps}
+\centering
+\caption{Collected Data Box-Plot from SSD and SPL faults and SSD and SPL time-to-market.}
+\label{fig:boxplot}
+\end{figure}
+
+\subsubsection{Hypothesis Testing}
+
+Based on the results obtained by the use of SSD and SPL to the development of two mobile learning products, we summarize, analyze and interpret the SSD and SPL collected data (Table \ref{tab:resul1} and Figure \ref{fig:boxplot}) by means of the Shapiro-Wilk normality test and the Mann-Whitney-Wilcoxon hypothesis test. Both tests validated the statistical power of the sample, allowing test the hypothesis.
+
+\subsubsection{Efficiency in the Time of Implementation (R.Q.1)}
+
+\begin{itemize}
+
+\item \textbf{Collected Data Normality Tests:} Shapiro-Wilk \cite{shaphirowilk65} normality test was applied to SSD and SPL time and faults and the following results were obtained:\\
+
+\textbf{\textit{SSD time (\textit{N}=18):}}
+
+For mean value ($\mu$) of 113.33 and standard deviation value of ($\sigma$) 33.98, the time for the SSD was \textit{p} = 0.0274.
+
+In the \textit{Shapiro-Wilk} test for a sample size \textit{(N)} 18 with 95\% of significance level ($\alpha$ = 0.05), \textit{p} = 0.0274 (0.0274 $<$ 0.05) and calculated value of \textit{W} = 0.8813 $<$ \textit{W} = 0.8970, the sample is considered non-normal.
+
+\textbf{\textit{SPL time (\textit{N}=18):}}
+
+For mean value ($\mu$) of 4.50 and standard deviation value of ($\sigma$) 3.75, the time for the SPL was \textit{p} = 0.0014.
+
+For a sample size \textit{(N)} 18 with 95\% of significance level ($\alpha$ = 0.05), \textit{p} = 0.0014 (0.0014 $<$ 0.05) and calculated value of \textit{W} = 0.7978 $<$ \textit{W} = 0.8970, the sample is considered non-normal.
+
+\item \textbf{Mann-Whitney-Wilcoxon for SSD and SPL time samples:} a rank with weights was assigned to each sample value. The weights were added and applied in Equation \ref{eq:MWW}:
+\small
+\begin{equation}
+\begin{split}
+\label{eq:MWW}
+U(DM) = N_1 * N_2 + \frac{N_1*(N_1+1)}{2} - \sum_{i=1}^{n} total_{2}
+\end{split}
+\end{equation}
+\normalsize 
+Where:
+\begin{itemize}
+\item \textit{$U(DM)$} is the equation for each independent sample (DM);
+\item \textit{$N_1$} is the size of the sample for the X methodology;
+\item \textit{$N_2$} is the size of the sample for the compared methodology (Y); and
+\item \textit{$total_{2}$} is the sum of the weights given for the compared methodology.
+\end{itemize}
+
+The time values calculated by Equation \ref{eq:MWW} were 326.5 for SSD and 0.00 for SPL.
+
+Each weight matches the participants weights of development process time with SSD or SPL methodology. There are evidences that both values are different ($326.5>0$), which leads to the rejection of the null hypothesis ($H_0$) and acceptance of the alternative hypothesis ($H_{2}$).
+
+Therefore, the answer to R.Q.1 was: SPL is more efficient than the SSD to implement software products for mobile platform. The implementations of the base project and SPL were also considered in the experiment.
+
+The participants received the base project of the two software products to be developed with SSD or SPL. It consists of similarities of the products and was developed to reduce the experimental execution duration. It was implemented in 480 minutes (8 hours).
+
+If we consider the time required for the implementation of each project base, plus the total development time to each participants (480 minutes), the total time would be 10680 minutes or 178 hours ($total_{time}$((subje\allowbreak cts(18) x minutes(480)) + 2040 = 10680 minutes). Taking into account the base project, the time lasting by the 18 participants was 81 minutes (1 hour and 35 minutes) and the total time would be 11361 minutes or 189 hours and 35 minutes ($total_{time}$((participants(18) x minutes(4.5)) + 10599 = 11361 minutes). 
+
+The comparison of the values, shows the SPL development spent 621 minutes (11 hours and 35 minutes) more than SSD. However, after the SPL implementation, this approach allows the evolution and insertion of new variabilities, guaranteeing the faster generation of new products in addition to other advantages of the adoption of SPL approach.
+
+\end{itemize}
+
+\subsubsection{Number of faults of the created software products (R.Q.2)}
+
+\begin{itemize}
+
+\item \textbf{Collected Data Normality Tests:} 
+
+\textbf{\textit{SSD faults (\textit{N}=18):}}
+
+For a mean value ($\mu$) 7.11 and standard deviation value of ($\sigma$) 4, the fault for the SSD was \textit{p} = 0.0006 for the \textit{Shapiro-Wilk} normality test.
+
+For a sample size \textit{(N)} 18 with 95\% significance level ($\alpha$ = 0.05), \textit{p} = 0.0006 (0.0006 $<$ 0.05) and value of \textit{W} = 0.7740 $<$ \textit{W} = 0.8970, the sample is considered non-normal.
+
+\textbf{\textit{SPL faults (\textit{N}=18):}}
+
+For a mean value ($\mu$) 1.00 and standard deviation value of ($\sigma$) 0, the fault for the SPL was \textit{p} = 0.00000007 for the \textit{Shapiro-Wilk} normality test.
+
+For a sample size \textit{(N)} 18 with 95\% of significance level ($\alpha$ = 0.05), \textit{p} = 0.00000007 (0.00000007 $<$ 0.05) and value of \textit{W} = 0.3730 $<$ \textit{W} = 0.8970, the sample is considered non-normal.
+
+\item \textbf{Mann-Whitney-Wilcoxon for SSD and SPL faults samples:} the number of faults calculated for SSD by Equation \ref{eq:MWW} was 282, whereas and for SPL, it was 42.
+
+Each weight matches participants development project faults with SSD or SPL methodology. There are evidences that both values are different ($282>42$), which leads to the rejection of the null hypothesis ($H_0$) and acceptance of the alternative hypothesis ($H_{1}$).
+
+According to the result from the Mann-Whitney-Wilcoxon, the answer for R.Q.2 was obtained: it means that the SSD is prone to showed more faults in the software products developed than the SPL.
+
+\end{itemize}
+
+\subsection{Interpretation and Discussion}\label{sub:interpretation}
+
+Data collected from the SSD and SPL application was analyzed and interpreted. The results are summarized in Table \ref{tab:resul_s}.
+
+\begin{table}
+\caption{\label{tab:resul_s}SSD and SPL Normality and Statistical Tests Results.}
+\centering
+\includegraphics[scale=0.35]{figures/section4/MSPLExpSummary.png}
+
+%\scriptsize
+%\resizebox{0.87\textwidth}{!}{\begin{minipage}{\textwidth}
+%\begin{tabular}{ccc}
+%\hline
+%\multicolumn{1}{c|}{\textbf{Element}}                                      & \multicolumn{1}{c|}{\textbf{SSD}}                          & \textbf{SPL}                                 \\ \hline
+%\multicolumn{1}{c|}{\multirow{2}{*}{\textbf{Selection of Participants}}}       & \multicolumn{2}{c}{18 practitioners.}                                                                     \\ \cline{2-3} 
+%\multicolumn{1}{c|}{}                                                      & \multicolumn{1}{c|}{N(SSD)=18}                             & N(SPL)=18                                    \\ \hline
+%\multicolumn{3}{c}{\textbf{Time to Implementation}}                                                                                                                                            \\ \hline
+%\multicolumn{1}{c|}{\textbf{Mean}}                                         & \multicolumn{1}{c|}{113.33}                                & 4.5                                          \\ \hline 
+%\multicolumn{1}{c|}{\multirow{2}{*}{\textbf{Shapiro-Wilk Normality Test}}} & \multicolumn{1}{c|}{p = 0.0274 (0.0274 \textless 0.05)}    & p = 0.0014 (0.0014 \textless 0.05)           \\
+%\multicolumn{1}{c|}{}                                                      & \multicolumn{1}{c|}{Non-normal.}                           & Non-normal.                                  \\ \hline
+%\multicolumn{1}{c|}{\multirow{2}{*}{\textbf{Statistical Test}}}            & \multicolumn{2}{c}{Mann-Whitney-Wilcoxon}                                                                 \\
+%\multicolumn{1}{c|}{}                                                      & \multicolumn{2}{c}{(326.5 \textgreater 0) Evidence of statistical differences among times.}            \\ \hline
+%\multicolumn{1}{c|}{\textbf{Result}}                                       & \multicolumn{2}{c}{R.Q.1 $H_2$: SPL has a smaller time-to-market than SSD.}                                                      \\ \hline
+%\multicolumn{3}{c}{\textbf{Number of Faults}}                                                                                                                                \\ \hline
+%\multicolumn{1}{c|}{\textbf{Mean}}                                         & \multicolumn{1}{c|}{7.11}                                  & 1                                            \\ \hline
+%\multicolumn{1}{c|}{\textbf{Shapiro-Wilk Normality Test}}                  & \multicolumn{1}{c|}{p = 0.0006 (0.0006 \textless 0.05)}    & p = 0.00000007 (0.00000007 \textless 0.05)   \\ \hline
+%\multicolumn{1}{c|}{\multirow{2}{*}{\textbf{Statistical Test}}}            & \multicolumn{2}{c}{Mann-Whitney-Wilcoxon}                                                                 \\
+%\multicolumn{1}{c|}{}                                                      & \multicolumn{2}{c}{(282 \textgreater 42) Evidence of statistical differences among number of faults.} \\ \hline
+%\multicolumn{1}{c|}{\textbf{Result}}                                       & \multicolumn{2}{c}{R.Q.2 $H_1$: SPL has a smaller number of faults in the products than SSD.}                                    
+%\end{tabular}
+%\end{minipage}}
+\end{table}
+
+In terms of time-to-market, the statistical difference showed by Mann-Whitney-Wilcoxon test provides evidence that SPL (i.e., M-SPLearning) was more efficient than SSD in the development of P1 and P2 m-learning products, therefore, R.Q.1 has been answered.
+
+Regarding number of faults, the statistical difference presented by Mann-Whitney-Wilcoxon test provides evidence that SSD showed more faults than SPL in the development of P1 and P2 m-learning products, therefore, R.Q.2 has been answered.
+
+According to the results of the Mann-Whitney-Wilcoxon test, both R.Q.1 and R.Q.2 null hypotheses can be rejected.
+
+\subsubsection{Threats to Validity}\label{sec:threats}
+
+This section addresses the actions taken to play directly against threats of this experiment, according to the Conceptual Model of Anderlin Neto and Conte \cite{neto13}.
+
+\textbf{Internal Validity:}
+
+\begin{itemize}
+\item \textbf{Differences among participants:} as we selected participants with different experience levels, variations in this skills were reduced during the training sessions. The assessments conducted at in the end of each day of training demonstrated the level of knowledge in the content used in the experimental execution and guaranteed the reduction in variations in the participants skills.
+
+\item \textbf{Fatigue effects:} on average, the experiment lasted 180 minutes. Fatigue was not considered relevant since the participants could leave the room for a quick break. Periods of absence were registered and disregarded in the time analysed.
+
+\item \textbf{Influence among participants:} the participants performed the experiment under the supervision of a human observer, so that a possible influence of communication among them could be mitigated.
+
+\item \textbf{Trainning Sessions:} in the training sessions, explanations were given for every participant. This action was taken to avoid possible biases, and allow that every training member solve all your questions.
+\end{itemize}
+
+\textbf{External Validity:}
+
+\begin{itemize}
+
+\item \textbf{Instrumentation:} m-learning products and other instruments were tested in the pilot project and were considered significant for the analysis of time-to-market and number of faults.
+
+\item \textbf{Participants:} more experiments that considering different metrics with industry practitioners must be conducted for the identification of other relevant factors related to the adoption of M-SPLearning.
+
+\end{itemize}
+
+\begin{itemize}
+
+\item \textbf{Construction Validity:} independent variables were tested in the pilot project to guarantee their validity.
+
+\item \textbf{Conclusion Validity:} since the number of participants is reduced, mainly by the availability of practitioners in the industry, the sample size must be increased in prospective replications of the experiment. Our results are considered indicators and are not conclusive, although the lack of experimental executions in an industrial environment, even with small samples, is important for the evaluation of the time-to-market and quality for both SSD and SPL.
+
+\end{itemize}

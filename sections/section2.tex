@@ -1,0 +1,39 @@
+\section{Background}\label{section2}
+
+This section provides a brief overview of essential concepts related to (i) SPLs and variabilities, (ii) the SMarty approach for variability management and (iii) m-learning.
+
+\subsection{SPL and Variabilities}
+
+SPLs enable the creation of software-intensive systems that share and manage a set of features for satisfying the specific needs of a particular domain. Commonalities are shared by all derived products, while variabilities represent the scope of customization supported by them \cite{bockle05,vanderlinden07}.
+
+Variability is one of the most important issues in the design of an SPL, as it reflects the way family members of an SPL differ from each other. The precise and explicit representation and management of variabilities enable a consistent generation of specific products in an SPL \cite{chen11,capilla13}. 
+
+Variabilities can be initially identified and represented by means of features, relevant and visible characteristics to stakeholders of a particular domain \cite{bosch01}. Features are usually represented by a feature model, i.e., a hierarchical structure that captures the structural relationships among the features of a specific domain \cite{bockle05,vanderlinden07}. Common features for the SPL products are considered mandatory, while variable features can be optional or alternative.
+
+% 29/12/2015 01:12 %
+
+The concept of SPL is suitable for domains in which products that share common features and a well-defined set of variabilities are demanded. For instance, in the education domain, instructors, tutors and apprentices can use ubiquitous computing to contribute and access the learning materials anytime and anywhere \cite{kukulska05}. This characteristic is achieved due to variabilities, such as interactivity and multimedia resources \cite{falvojr14a,falvojr14b}, which provide a high degree of communication and cooperation among users.
+
+At its essence, the conception of an SPL involves core asset development and product development, both under technical and organizational management perspectives. A core asset can be developed through the extraction of artifacts from software products or through scratch development. In general, the products and core assets are built according to their domain needs. Such SPL conception phases are classified into three essential activities, namely (i) Core Asset Development or DE, (ii) Product Development or AE and (iii) Management \cite{bockle05,vanderlinden07}.
+
+\subsection{SMarty Approach}
+
+% 29/12/2015 18:50 %
+
+The proper management of variabilities has great relevance to ensure that all the benefits of SPLs are obtained. Therefore different approaches related to the management of variabilities have been proposed by the research community, such as SMarty.  \cite{chen11,capilla13}.  
+
+\textbf{S}tereotype-based \textbf{M}anagement of V\textbf{ar}iabili\textbf{ty} (SMarty)~\cite{oliveirajr10} is a variability management approach composed of a UML 2.4 profile (SMartyProfile) and supported by a systematic process (SMartyProcess), related to the main SPL activities. SMartyProcess defines a set of guidelines that supports the application of stereotypes and tagged-values. The guidelines ensure the identification and representation of variabilities and enabled the evolution of SPL, whereas the process incrementally and iteratively guarantees the identification of new variabilities and evolution of the SPL core assets.
+
+Another benefit from the use of SMarty is visibility regarding the relationship among the feature model and variabilities in the UML diagrams. The variabilities composed of variation points are fully represented. Therefore, there are no additional documents for the development of SPL \cite{oliveirajr10}.
+
+The UML models supported by SMarty (use case, class, sequence, component and activity) represent the static and dynamic aspects of software products. The SMarty effectiveness in identifying and representing variabilities in the UML models has been experimentally evaluated \cite{marcolino13,marcolino14a,marcolino14b,bera15}. The results provided evidence of the effectiveness from use case, sequence and component models. Also, they lead to the evolution of the SMartyProcess for class models.
+
+\subsection{Mobile Learning}
+
+The rapid growth of information and communication technologies has favored the emergence of new methods for teaching and learning and innovative ways for facing the shortcomings of traditional education \cite{west12}. 
+
+M-learning is characterized by its ability to provide a strong interaction between learners and instructors, who not only access a virtual learning environment, but also contribute to and actively participate in the knowledge construction process through mobile devices anytime and anywhere \cite{kukulska05}. Such a interaction through mobile devices provides other benefits than accessibility, convenience and communication.
+
+However, m-learning is still considered an incipient concept, as it has limitations that hamper its effective development and adoption. For instance, even with the increasing demand for m-learning applications, few studies have addressed development issues through a strategy of systematic reuse, such as SPL, in the mobile learning setting.  
+
+Based on the concepts and ideas summarized in this section, we have worked on the establishment of an SPL for the m-learning domain, named M-SPLearning. Your main characteristics and experimental evaluation are discussed next.

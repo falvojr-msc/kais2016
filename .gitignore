@@ -1,0 +1,6 @@
+# TeXstudio #
+*.log
+*.aux
+*.pdf
+*.spl
+*.synctex.gz
